@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee" version="2.1">
+  <managed-bean>
+    <managed-bean-name>WineStoreSingleTableBean</managed-bean-name>
+    <managed-bean-class>com.apress.ejb.chapter09.jsfclient.managed.WineStoreSingleTableBean</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>
+  <navigation-rule>
+    <from-view-id>/WineStoreSingleTable.jsp</from-view-id>
+    <navigation-case>
+      <from-outcome>success</from-outcome>
+      <to-view-id>/confirm.jsp</to-view-id>
+    </navigation-case>
+  </navigation-rule>
+</faces-config>

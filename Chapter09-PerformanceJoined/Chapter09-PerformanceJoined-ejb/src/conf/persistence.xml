@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="Chapter09-Joined-JTA" transaction-type="JTA">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <jta-data-source>jdbc/wineAppJoin</jta-data-source>
+    <class>com.apress.ejb.chapter09.joined.Address</class>
+    <class>com.apress.ejb.chapter09.joined.BusinessContact</class>
+    <class>com.apress.ejb.chapter09.joined.CartItem</class>
+    <class>com.apress.ejb.chapter09.joined.Customer</class>
+    <class>com.apress.ejb.chapter09.joined.CustomerOrder</class>
+    <class>com.apress.ejb.chapter09.joined.Distributor</class>
+    <class>com.apress.ejb.chapter09.joined.Individual</class>
+    <class>com.apress.ejb.chapter09.joined.InventoryItem</class>
+    <class>com.apress.ejb.chapter09.joined.OrderItem</class>
+    <class>com.apress.ejb.chapter09.joined.Supplier</class>
+    <class>com.apress.ejb.chapter09.joined.Wine</class>
+    <class>com.apress.ejb.chapter09.joined.WineItem</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+  </persistence-unit>
+</persistence>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="Chapter07-WineAppUnit-ResourceLocal" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.apress.ejb.chapter07.entities.Individual</class>
+    <class>com.apress.ejb.chapter07.entities.CustomerOrder</class>
+    <class>com.apress.ejb.chapter07.entities.Customer</class>
+    <class>com.apress.ejb.chapter07.entities.OrderItem</class>
+    <class>com.apress.ejb.chapter07.entities.InventoryItem</class>
+    <class>com.apress.ejb.chapter07.entities.BusinessContact</class>
+    <class>com.apress.ejb.chapter07.entities.Distributor</class>
+    <class>com.apress.ejb.chapter07.entities.CartItem</class>
+    <class>com.apress.ejb.chapter07.entities.Address</class>
+    <class>com.apress.ejb.chapter07.entities.Wine</class>
+    <class>com.apress.ejb.chapter07.entities.Supplier</class>
+    <class>com.apress.ejb.chapter07.entities.WineItem</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/WineApp"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.user" value="wineapp"/>
+      <property name="javax.persistence.jdbc.password" value="wineapp"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+</persistence>

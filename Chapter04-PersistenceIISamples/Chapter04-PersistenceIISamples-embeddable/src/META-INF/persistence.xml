@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="Chapter04-PersistenceIISamples-Embeddable" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.apress.ejb.chapter04.embeddable.Employee</class>
+    <class>com.apress.ejb.chapter04.embeddable.FullTimeEmployee</class>
+    <class>com.apress.ejb.chapter04.embeddable.PartTimeEmployee</class>
+    <class>com.apress.ejb.chapter04.embeddable.Person</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/WineApp"/>
+      <property name="javax.persistence.jdbc.password" value="wineapp"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.user" value="wineapp"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="Chapter04-PersistenceIISamples-SingleTable" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.apress.ejb.chapter04.singletable.Address</class>
+    <class>com.apress.ejb.chapter04.singletable.Employee</class>
+    <class>com.apress.ejb.chapter04.singletable.FullTimeEmployee</class>
+    <class>com.apress.ejb.chapter04.singletable.PartTimeEmployee</class>
+    <class>com.apress.ejb.chapter04.singletable.Person</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/WineApp"/>
+      <property name="javax.persistence.jdbc.password" value="wineapp"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.user" value="wineapp"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+</persistence>
